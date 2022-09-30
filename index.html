@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ToDos App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <h1>todos</h1>
+    </header>
+    <div class="main-view">
+        <form class="input-form">
+            <button class="select-all-button"></button>
+            <input class="input-form-text" type="text" placeholder="What needs to be done?">
+        </form>
+        <ul class="task-list">
+            <li class="task">
+                <input class="task-checkbox" type="checkbox">
+                <p class="task-text">HTML</p>
+                <button class="delete-task-button">delete</button>
+            </li>
+            <li class="task">
+                <input class="task-checkbox" type="checkbox" checked>
+                <p class="task-text">CSS</p>
+                <button class="delete-task-button">delete</button>
+            </li>
+            <li class="task">
+                <input class="task-checkbox" type="checkbox">
+                <p class="task-text">JS</p>
+                <button class="delete-task-button">delete</button>
+            </li>
+            <li class="task">
+                <input class="task-checkbox" type="checkbox">
+                <p class="task-text">JS tools</p>
+                <button class="delete-task-button">delete</button>
+            </li>
+        </ul>
+        <footer>
+            <p class="item-count">3 items left</p>
+            <div class="button-group" data-toggle="buttons">
+                <label class="all-button">
+                    <input type="radio" name="options" checked> All
+                </label>
+                <label class="active-button">
+                    <input type="radio" name="options"> Active
+                </label>
+                <label class="completed-button">
+                    <input type="radio" name="options"> Completed
+                </label>
+            </div>
+            <button class="clear-completed-button">Clear completed</button>
+        </footer>
+    </div>
+</body>
+</html>
