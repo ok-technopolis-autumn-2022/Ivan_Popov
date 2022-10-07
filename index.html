@@ -12,7 +12,7 @@
         </header>
         <main class="todo-app__frame">
             <section class="todo-app__main-controls">
-                <button class="todo_app__select-all" aria-label="Select all tasks"></button>
+                <button class="todo_app__select-all" title="Select all tasks"></button>
                 <input class="todo_app__add-text" aria-label="Input task field" type="text"
                     placeholder="What needs to be done?">
             </section>
@@ -69,7 +69,7 @@
         </main>
         <footer class="todo-app__footer">
             <span class="todo-app__footer-item-count">3 items left</span>
-            <section class="todo-app__footer-button-group" aria-label="Tasks filter options">
+            <section class="todo-app__footer-button-group" role="radiogroup" aria-label="Tasks filter options">
                 <label class="all-button">
                     <input type="radio" name="options" aria-label="Show all tasks" checked> All
                 </label>
