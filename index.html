@@ -4,6 +4,10 @@
     <title>ToDos App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="todo-app">
@@ -22,7 +26,7 @@
                         <div class="task-item__view">
                             <input class="task-item__status" type="checkbox" aria-label="Task: HTML">
                             <span class="task-item__text">HTML</span>
-                            <button class="task-item__delete">Delete task</button>
+                            <button class="task-item__delete" title="Delete task"></button>
                         </div>
                         <div class="task-item__edit" hidden="hidden">
                             <input class="task-item__input" type="text" value="HTML" aria-label="Completed task: HTML">
@@ -34,7 +38,7 @@
                         <div class="task-item__view">
                             <input class="task-item__status" type="checkbox" aria-label="Completed task: CSS" checked>
                             <span class="task-item__text">CSS</span>
-                            <button class="task-item__delete">Delete task</button>
+                            <button class="task-item__delete" title="Delete task"></button>
                         </div>
                         <div class="task-item__edit" hidden="hidden">
                             <input class="task-item__input" type="text" value="CSS" aria-label="Edit task: CSS">
@@ -46,7 +50,7 @@
                         <div class="task-item__view">
                             <input class="task-item__status" type="checkbox" aria-label="Completed task: JS">
                             <span class="task-item__text">JS</span>
-                            <button class="task-item__delete">Delete task</button>
+                            <button class="task-item__delete" title="Delete task"></button>
                         </div>
                         <div class="task-item__edit" hidden="hidden">
                             <input class="task-item__input" type="text" value="JS" aria-label="Edit task: JS">
@@ -58,7 +62,7 @@
                         <div class="task-item__view">
                             <input class="task-item__status" type="checkbox" aria-label="Completed task: JS tools">
                             <span class="task-item__text">JS tools</span>
-                            <button class="task-item__delete">Delete task</button>
+                            <button class="task-item__delete" title="Delete task"></button>
                         </div>
                         <div class="task-item__edit" hidden="hidden">
                             <input class="task-item__input" type="text" value="JS tools" aria-label="Edit task: JS tools">
@@ -71,13 +75,16 @@
             <span class="todo-app__footer-item-count">3 items left</span>
             <section class="todo-app__footer-button-group" role="radiogroup" aria-label="Tasks filter options">
                 <label class="all-button">
-                    <input type="radio" name="options" aria-label="Show all tasks" checked> All
+                    <input type="radio" name="options" aria-label="Show all tasks" checked>
+                    <span class="option-text">All</span>
                 </label>
                 <label class="active-button">
-                    <input type="radio" name="options" aria-label="Show active tasks"> Active
+                    <input type="radio" name="options" aria-label="Show active tasks">
+                    <span class="option-text">Active</span>
                 </label>
                 <label class="completed-button">
-                    <input type="radio" name="options" aria-label="Show completed tasks"> Completed
+                    <input type="radio" name="options" aria-label="Show completed tasks">
+                    <span class="option-text">Completed</span>
                 </label>
             </section>
             <button class="todo-app__clear-button" aria-label="Clear completed tasks">Clear completed</button>
