@@ -1,0 +1,27 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "ToDo Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "check-styles": "stylelint \"**/*.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-autumn-2022/Ivan_Popov.git"
+  },
+  "author": "Popov Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-autumn-2022/Ivan_Popov/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-autumn-2022/Ivan_Popov#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-standard": "^29.0.0"
+  }
+}
